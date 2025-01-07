@@ -1,5 +1,19 @@
-/*
+1) ECMA SCRIPT
+2) PROMISES
+3) EXPRESS SERVER
+4) NODEMON
+5) RESPONSE OBJECT
+6) PORT AND ENVIRONMENT VARIABLE
+7) PARSING BODY
+8) PARSING HEADER
+9) PARSING QUERIES
+10) POSTMAN
+11) FILTER, MAP, ARROW FUNCTION
+12) BASH AND TERMINAL COMMAND
+13) GIT AND GITHUB
 
+js :- 
+ 
 1) ECMAScript is not a programming language 
 itself but a specification for scripting languages.
 JavaScript, JScript (Microsoft's version), and ActionScript (Adobe) are implementations of the ECMAScript standard.
@@ -63,7 +77,7 @@ let myPromise = new Promise((resolve, reject) => {
     }
 });    
 
-/* promise are used to handle asynchronous operations in javascript
+ promise are used to handle asynchronous operations in javascript
 such as fetching data from a server, reading a file, or executing a timer.
 
 2) promise has 3 states:-
