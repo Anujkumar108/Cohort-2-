@@ -153,6 +153,15 @@ app.listen(PORT, () => {
 Nodemon is utility that monitors for any  changes in your source code and automatically 
 restarts the server when changes are detected.
 
+To install NODEMON: 
+npm install -g nodemon 
+
+To install locally in project: 
+npm install nodemon 
+
+Use Nodemon to Start Your Server:
+nodemon server.js
+
 6) Response Object 
 In an Express js appications you send a response back to client using the res (response) ojbect the 
 res object provides various methods to send different types of responses such as text, JSON,
