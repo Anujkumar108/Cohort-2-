@@ -335,7 +335,9 @@ app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
 
-11) How to parse headers in a GET request
+11) PARSING HEADERS
+ 
+How to parse headers in a GET request
 
 const express = require('express');
 const app = express();
@@ -356,7 +358,9 @@ app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
 
-12) How to parse query parameters
+12) PARSING QUERIES
+
+How to parse query parameters
 
 const express = require('express');
 const app = express();
@@ -410,4 +414,5 @@ Postman is a popular API development and testing tool
 that allows you to make HTTP requests to a server and view the responses. 
 It's commonly used for testing APIs during development.
 
+15)  
 */
