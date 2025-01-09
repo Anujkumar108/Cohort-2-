@@ -301,8 +301,9 @@ app.listen(port, () => {
 - run your Express app 
 node app.js
 
-10)  parsing Body 
-how to parse body in a POST  request 
+10)  parsing Body - 
+
+how to parse body in a POST  request  ?
 
 To parse the body of a POST request in Express, 
 you can use middleware to handle different types of data formats 
@@ -337,7 +338,13 @@ app.listen(port, () => {
 
 11) PARSING HEADERS
  
-How to parse headers in a GET request
+How to parse headers in a GET request ?
+
+In an Express.js application, you can access headers in a
+GET request through the req.headers object in the route
+handler. The req.headers object contains all the headers
+sent with the request, and you can extract and use 
+specific headers as needed.
 
 const express = require('express');
 const app = express();
@@ -360,7 +367,13 @@ app.listen(port, () => {
 
 12) PARSING QUERIES
 
-How to parse query parameters
+How to parse query 
+parameters ?
+
+In an Express.js application, query parameters can be 
+parsed from the URL using the req.query object. Query
+parameters are usually included in the URL after the "?"
+character and separated by "&"
 
 const express = require('express');
 const app = express();
@@ -414,5 +427,84 @@ Postman is a popular API development and testing tool
 that allows you to make HTTP requests to a server and view the responses. 
 It's commonly used for testing APIs during development.
 
-15)  
+15)  FILTER, MAP, ARROW FUNCTION 
+-filter is used to filter the data from the array or any object 
+-map is used to iterate an elements in an array , it provides an uniqueness , there is a parameter called key
+which we pass in map , it's like a for loop.
+-arrow function is the simplest way to define any function
+
+const input = [1,3,4,5,6];
+const ans = input.map(function(i) {
+ return i*2;
+ )};
+console.log(ans);
+
+const arr = [1,2,3,4,5];
+const ans = arr.filter(function(n) {
+ if(n%2!=0) {
+  return true;
+ }
+ else {
+  return false;}
+ )};
+
+ Arrow function is js is a more concise way to write functions. it used the => syntax and
+ is particularly useful for writing short functions. Here's a basic example: 
+
+ Regular function: 
+  const add = function(a, b) {
+   return a + b;
+};   
+
+Arrow function : 
+
+ const add = (a, b) => a + b;
+
+Additional Points:
+1) single parameter : if the function has only one parameter, you can omit the parenthesis.
+
+ const square = x => x * x;
+
+2) No parameters : if the function has no parameters, you must use empty parenthesis: 
+
+const greet = {} => console.log("hello!");
+
+3) Multiline Body : if the function body contains more than ine statement, you need to use curly
+ braces {} and explicity return a value:
+
+ const addAndLog = (a, b) => {
+  const sum = a + b;
+  console.log(sum);
+  return sum;
+};
+
+16) BASH AND TERMINAL (COMMAND)   :- 
+
+1) PWD TO KNOW TH CURRENT DIRECTORY 
+2) CD TO CHANGE TO DIRECTORY 
+3) LS LISTING ALL THE FILES 
+4) MKDIR USE TO MAKE FOLDER
+5) CAT USE TO SEE THE CONTENT FILE 
+6) VI USED TO EDIT A FILE 
+7) TOUCH USE TO CREATE EMPTY FILE 
+8) MV USED TO FOLDER FROM ONE TO ANOTHER 
+9) CP USED TO COPY FILE 
+
+17) GIT and github 
+git is a version control system
+installed locally on the computer 
+track changes made to a file   
+
+GITHUB 
+used for hoisting git repositries 
+cloud based 
+provides a web interface to view file changes
+
+COMMANDS
+git init
+ls -la
+git status 
+git add
+git commit  
+  
 */
