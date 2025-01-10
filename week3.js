@@ -153,11 +153,12 @@ app.listen(port,() => {
     console.log(`Server is running on http://localhost:${port}`);
 });  
 
+ex. to use next method ~
+
 const express = require("express");
 const app = express();
 
 const port = 3000;
-
 
 app.use((req, res, next) => {
     console.log("this middleware runs first");
