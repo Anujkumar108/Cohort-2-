@@ -122,6 +122,8 @@ cycle. Middleware functions can perform various tasks, such as modifying the req
 objects, ending the request- response cycle or passing control to the next 
 middleware function in the stack.
 
+SOME ASSOCIATED CONCEPTS ~  
+ 
 - next keyword : 
 In middleware functions in Express, next is a callback function 
 that is used to pass control to the next middleware function 
